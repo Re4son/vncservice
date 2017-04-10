@@ -5,9 +5,9 @@ Raspberry Pi service to turn on avahi-daemon if /boot/avahi is present.
 
 
 
-#### To install the service:  
+#### To install and enable the service:  
 
-*sudo cp vncserver@.service /lib/systemd/system/*  
+*sudo wget -O /lib/systemd/system/vncserver@.service https://github.com/Re4son/vncservice/raw/master/vncserver@.service*  
 *sudo systemctl enable vncserver@1.service && sudo systemctl start vncserver@1.service*
 
 #### Important Notice:

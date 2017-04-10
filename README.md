@@ -1,5 +1,5 @@
 # vncservice
-Service file to start TightVNC or TigerVNC as a service
+Service file to start TightVNC or TigerVNC as a service in kali (as root)
 
 Raspberry Pi service to turn on avahi-daemon if /boot/avahi is present.  
 

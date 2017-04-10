@@ -6,6 +6,7 @@ Service file to start TightVNC or TigerVNC as a service in kali
 
 *sudo wget -O /lib/systemd/system/vncserver@.service https://github.com/Re4son/vncservice/raw/master/vncserver@.service*  
 *sudo systemctl enable vncserver@1.service && sudo systemctl start vncserver@1.service*  
+  
 This service runs vncserver as root. You can change that and other startup parameters by editing /lib/systemd/system/vncserver@.service
 
 #### Important Notice:

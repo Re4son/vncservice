@@ -18,3 +18,13 @@ ssh -L 5902:localhost:5901 root@192.168.137.137
 vncviewer 127.0.0.1::5902
 
 Since you are ssh'ing into your remote machine, you might as well just type "vncserver" and be done instead of running it as a service.
+
+
+# xfce-vnc-startup
+Xstartup file to allow multiple simultanious xfce sessions
+
+#### Installation
+wget -O ~/.vnc/xstartup https://github.com/Re4son/vncservice/raw/master/xstartup
+
+![xfce4_sessions](https://whitedome.com.au/re4son/wp-content/uploads/VNC-multipleSessions.jpg)
+

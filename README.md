@@ -25,6 +25,7 @@ Xstartup file to allow multiple simultanious xfce sessions (fix for "xfce4-sessi
 
 #### Installation
 wget -O ~/.vnc/xstartup https://github.com/Re4son/vncservice/raw/master/xstartup
+chmod 755 ~/.vnc/xstartup
 
 ![xfce4_sessions](https://whitedome.com.au/re4son/wp-content/uploads/VNC-multipleSessions.jpg)
 

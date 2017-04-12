@@ -24,7 +24,7 @@ Since you are ssh'ing into your remote machine, you might as well just type "vnc
 Xstartup file to allow multiple simultanious xfce sessions (fix for "xfce4-session: Another session manager is already running" error)
 
 #### Installation
-wget -O ~/.vnc/xstartup https://github.com/Re4son/vncservice/raw/master/xstartup
+wget -O ~/.vnc/xstartup https://github.com/Re4son/vncservice/raw/master/xstartup  
 chmod 755 ~/.vnc/xstartup
 
 ![xfce4_sessions](https://whitedome.com.au/re4son/wp-content/uploads/VNC-multipleSessions.jpg)

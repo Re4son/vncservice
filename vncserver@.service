@@ -7,7 +7,7 @@ Type=forking
 User=root
 PAMName=login
 PIDFile=/root/.vnc/%H:%i.pid
-ExecStartPre=/bin/sh -c "if [ -f /home/carsten/.vnc/%H:%i.pid ]; then /usr/bin/vncserver -kill :%i > /dev/null 2>&1 ; fi"
+ExecStartPre=/bin/sh -c "if [ -f /home/root/.vnc/%H:%i.pid ]; then /usr/bin/vncserver -kill :%i > /dev/null 2>&1 ; fi"
 ExecStart=/usr/bin/vncserver :%i
 ExecStop=/usr/bin/vncserver -kill :%i
 

@@ -4,14 +4,15 @@ After=syslog.target network.target
 
 [Service]
 Type=forking
-User=root
 PAMName=login
 
-# User=Root
+# User=root
+User=root
 PIDFile=/root/.vnc/%H:%i.pid
 ExecStartPre=/bin/sh -c "if [ -f /home/root/.vnc/%H:%i.pid ]; then /usr/bin/vncserver -kill :%i > /dev/null 2>&1 ; fi"
 
-# User=Pi
+# User=pi
+##User=pi
 ##PIDFile=/home/pi/.vnc/%H:%i.pid
 ##ExecStartPre=/bin/sh -c "if [ -f /home/pi/.vnc/%H:%i.pid ]; then /usr/bin/vncserver -kill :%i > /dev/null 2>&1 ; fi"
 

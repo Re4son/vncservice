@@ -6,8 +6,15 @@ After=syslog.target network.target
 Type=forking
 User=root
 PAMName=login
+
+# User=Root
 PIDFile=/root/.vnc/%H:%i.pid
 ExecStartPre=/bin/sh -c "if [ -f /home/root/.vnc/%H:%i.pid ]; then /usr/bin/vncserver -kill :%i > /dev/null 2>&1 ; fi"
+
+# User=Pi
+##PIDFile=/home/pi/.vnc/%H:%i.pid
+##ExecStartPre=/bin/sh -c "if [ -f /home/pi/.vnc/%H:%i.pid ]; then /usr/bin/vncserver -kill :%i > /dev/null 2>&1 ; fi"
+
 ExecStart=/usr/bin/vncserver :%i
 ExecStop=/usr/bin/vncserver -kill :%i
 
